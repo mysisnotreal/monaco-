@@ -2281,7 +2281,7 @@
     	left: 0;
     	width: 100%;
     	height: 2px;
-    	background-color: red;
+    	background-color: white;
       }
 
       .tab-title {
@@ -2586,7 +2586,7 @@ function setupAutosave() {
     base: 'vs-dark',
     inherit: true,
     colors: {
-        "editor.background": '#000000', // Your background color
+        "editor.background": '#ffffff00',
     },
     rules: [
     {
@@ -2628,17 +2628,17 @@ function setupAutosave() {
         foreground: '000000', // Black for variables
     },
     {
-        token: 'variable.predefined',
-        foreground: '222222',
-        fontStyle: "italic"
-    },
+	    token: 'variable.predefined',
+	    foreground: '5a5a5a', // A bit lighter gray for predefined vars
+	    fontStyle: "italic"
+	},
     {
         token: 'constant',
         foreground: '111111', // Dark gray for constants
     },
     {
         token: 'class',
-        foreground: '000000', // Black bold for classes
+        foreground: '5a5a5a', // Black bold for classes
         fontStyle: "bold"
     },
     {
