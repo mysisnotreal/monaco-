@@ -2586,79 +2586,79 @@ function setupAutosave() {
     base: 'vs-dark',
     inherit: true,
     colors: {
-        "editor.background": '#111111', // Your background color
+        "editor.background": '#000000', // Your background color
     },
     rules: [
     {
         token: 'global',
-        foreground: '9966cc', // More purple for global variables/functions
+        foreground: '656565', // Black for globals
         fontStyle: "bold"
     },
     {
         token: 'keyword',
-        foreground: 'cc66cc', // Stronger purple for keywords
+        foreground: '111111', // Very dark gray for keywords
         fontStyle: "bold"
     },
     {
         token: 'comment',
-        foreground: '669966' // Dark green for comments
+        foreground: '666666', // Medium gray for comments
     },
     {
         token: 'number',
-        foreground: 'f99157' // Orange for numbers remains
+        foreground: '333333', // Dark gray for numbers
     },
     {
         token: 'string',
-        foreground: '66cc66' // Brighter green for strings
+        foreground: '444444', // Gray for strings
     },
     {
         token: 'method',
-        foreground: 'ff6699' // More reddish-pink for methods
+        foreground: '222222', // Very dark gray for methods
     },
     {
         token: 'operator',
-        foreground: 'ff5555' // Red tint for operators
+        foreground: '555555', // Mid gray for operators
     },
     {
         token: 'type',
-        foreground: 'ffdd66' // Slightly brighter yellow for types
+        foreground: '777777', // Lighter gray for types
     },
     {
         token: 'variable',
-        foreground: 'aaffff' // Cyan remains for variables
+        foreground: '000000', // Black for variables
     },
     {
         token: 'variable.predefined',
-        foreground: 'aaffff',
+        foreground: '222222',
         fontStyle: "italic"
     },
     {
         token: 'constant',
-        foreground: 'd48aff' // Stronger purple-pink for constants
+        foreground: '111111', // Dark gray for constants
     },
     {
         token: 'class',
-        foreground: 'ff3333', // Brighter red for classes
+        foreground: '000000', // Black bold for classes
         fontStyle: "bold"
     },
     {
         token: 'interface',
-        foreground: 'ffcc66', // Warm yellow for interfaces
+        foreground: '444444', // Medium-light gray for interfaces
         fontStyle: "italic"
     },
     {
         token: 'function',
-        foreground: 'b266ff', // More purple for functions
+        foreground: '000000', // Black bold for functions
         fontStyle: "bold"
     },
     {
         token: 'label',
-        foreground: '66ff66', // Bright green for labels
+        foreground: '333333', // Gray italic for labels
         fontStyle: "italic"
     },
     {
         token: 'predefined.type',
-        foreground: 'ffaa33', // Orange-yellow for predefined types
+        foreground: '555555', // Mid gray for predefined types
     },
 ]
 });
@@ -2849,7 +2849,7 @@ function setupAutosave() {
 				});
 			}
 			async function load() {
-				var docs = await(await fetch('https://raw.githubusercontent.com/2rise/ExploitMonaco/refs/heads/main/MonacoLib')).json();
+				var docs = await(await fetch('https://raw.githubusercontent.com/mysisnotreal/monaco-/refs/heads/main/lib.json')).json();
 
 				for (var prop in docs) {
   					  for(var item in docs[prop])
